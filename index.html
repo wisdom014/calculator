@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>calculator</title>
+  </head>
+  <body>
+    <div id="main">
+      <p><strong>Calculator App</strong></p>
+      <input type="text" id="display" placeholder="0" disabled />
+      <div id="line-one">
+        <button id="clear" onclick="clearDisplay()">C</button>
+        <button id="del" onclick="deleteDisplay()">D</button>
+        <button id="percent" onclick="percentage()">%</button>
+        <button id="divide" onclick="appendToDisplay('/')">/</button>
+      </div>
+      <div id="line-two">
+        <button id="seven" onclick="appendToDisplay('7')">7</button>
+        <button id="eight" onclick="appendToDisplay('8')">8</button>
+        <button id="nine" onclick="appendToDisplay('9')">9</button>
+        <button id="multiply" onclick="appendToDisplay('*')">x</button>
+      </div>
+      <div id="line-three">
+        <button id="four" onclick="appendToDisplay('4')">4</button>
+        <button id="five" onclick="appendToDisplay('5')">5</button>
+        <button id="six" onclick="appendToDisplay('6')">6</button>
+        <button id="minus" onclick="appendToDisplay('-')">-</button>
+      </div>
+      <div id="line-four">
+        <button id="one" onclick="appendToDisplay('1')">1</button>
+        <button id="two" onclick="appendToDisplay('2')">2</button>
+        <button id="three" onclick="appendToDisplay('3')">3</button>
+        <button id="plus" onclick="appendToDisplay('+')">+</button>
+      </div>
+      <div id="line-five">
+        <button id="zero" onclick="appendToDisplay('0')">0</button>
+        <button id="dot" onclick="appendToDisplay('.')">.</button>
+        <button id="equal" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="/calculatorapp/app.js"></script>
+</html>
