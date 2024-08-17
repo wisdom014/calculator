@@ -1,5 +1,16 @@
 body {
- font-size: 2rem;
+font-size: 2rem;
+background-color: antiquewhite;
+height: 100dvh;
+width: 100dvw;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+box-sizing: border-box;
+overflow: hidden;
+margin: 0 auto;
 }
 #display {
  height: 2rem;
@@ -8,9 +19,20 @@ body {
  padding-top: 10px;
 }
 #main {
- padding: 5px;
+ padding: 10px;
  font-size: 1rem;
-  overflow: hidden;
+  background-color: white;
+  border-radius: 15px;
+}
+#main p{
+ font-size: 2rem;
+}
+input[type="text"] {
+ border-radius: 7px;
+ width: 83%;
+ text-align: left;
+ overflow: scroll;
+ font-size: 24px;
 }
 div {
  text-align: center;
@@ -21,6 +43,7 @@ button {
   border-radius: 5px;
  background-color: orangered;
  color: white;
- width: 40px;
- height: 40px;
+ font-size: 23px;
+ width: 60px;
+ height: 60px;
 }

@@ -6,13 +6,21 @@
             document.getElementById('display').value = '';
         }
 
-              function deleteDisplay() {
-        document.getElementById("display").value = "0";
-      }
+        function deleteDisplay() {
+            const display = document.getElementById("display");
+            display.value = display.value.slice(0, -1);
+        }
 
-      function percentage() {
-       document.getElementById('display').value /= 100;
-      }
+        function percentage() {
+            const display = document.getElementById('display');
+            const numbers = display.value.split('%'); // Split input by '%'
+            if (numbers.length === 2) {
+                const result = Number(numbers[0]) % Number(numbers[1]); // Calculate remainder
+                display.value = result;
+            } else {
+                display.value = 'Error';
+            }
+        }
 
         function calculateResult() {
             const display = document.getElementById('display');
@@ -22,3 +30,4 @@
                 display.value = 'Error';
             }
         }
+    
